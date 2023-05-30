@@ -47,6 +47,27 @@ document.getElementById('economy-class-minus').addEventListener('click', functio
     handleTicketPrice('economy-class', false);
 })
 
+/// First Class Kid price
+document.getElementById('first-class-kid-plus').addEventListener('click', function () {
+    handleTicketPrice('first-class-kid', true);
+})
+
+document.getElementById('first-class-kid-minus').addEventListener('click', function () {
+    handleTicketPrice('first-class-kid', false);
+})
+
+// Economy Class Kid Price
+document.getElementById('economy-class-kid-plus').addEventListener('click', function () {
+    handleTicketPrice('economy-class-kid', true);
+})
+
+document.getElementById('economy-class-kid-minus').addEventListener('click', function () {
+    handleTicketPrice('economy-class-kid', false);
+})
+
+
+
+
 // Common function for both Class ticket
 
 function handleTicketPrice(ticket, isIncrease) {
@@ -56,7 +77,6 @@ function handleTicketPrice(ticket, isIncrease) {
     let newTicketNumber = currentTicketNumber;
 
     if (isIncrease == true) {
-
         newTicketNumber = currentTicketNumber + 1;
     }
 
@@ -69,14 +89,19 @@ function handleTicketPrice(ticket, isIncrease) {
     let ticketPrice = 0;
 
     if (ticket == 'first-class') {
-        ticketPrice = newTicketNumber * 150;
-    } else if (ticket == 'economy-class') {
         ticketPrice = newTicketNumber * 100;
+    } else if (ticket == 'economy-class') {
+        ticketPrice = newTicketNumber * 50;
+    } else if (ticket == 'first-class-kid') {
+        ticketPrice = newTicketNumber * 50;
+    } else if (ticket == 'economy-class-kid') {
+        ticketPrice = newTicketNumber * 25;
     }
 
     console.log(ticketPrice);
     calculateTotal();
 }
+
 
 //making return disabled after radio button is pressed.
 const oneWayRadio = document.getElementById("one-way");
@@ -110,10 +135,16 @@ function calculateTotal() {
     const firstClassTicket = document.getElementById('first-class-ticket-number');
     const firstClassTicketNumber = parseInt(firstClassTicket.value);
 
+    const firstClassKidTicket = document.getElementById('first-class-kid-ticket-number');
+    const firstClassKidTicketNumber = parseInt(firstClassKidTicket.value);
+
     const economyClassTicket = document.getElementById('economy-class-ticket-number');
     const economyClassTicketNumber = parseInt(economyClassTicket.value);
 
-    const totalTicketPrice = firstClassTicketNumber * 100 + economyClassTicketNumber * 50;
+    const economyClassKidTicket = document.getElementById('economy-class-kid-ticket-number');
+    const economyClassKidTicketNumber = parseInt(economyClassKidTicket.value);
+
+    const totalTicketPrice = firstClassTicketNumber * 100 + economyClassTicketNumber * 50 + firstClassKidTicketNumber * 50 + economyClassKidTicketNumber * 25;
     document.getElementById('price-subtotal').innerText = totalTicketPrice;
 
     const totalfees = 0.1 * totalTicketPrice;
@@ -123,7 +154,6 @@ function calculateTotal() {
     document.getElementById('price-total').innerText = priceTotal;
 
     document.getElementById('confirmation-price-total').value = priceTotal;
-
 }
 
 
