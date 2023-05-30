@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+    
+
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Booking Section-->
+    <section class="main-content container">
+        <div class="booking-form" id="booking-and-confirmation">
+
+            <!-- Booking input Form -->
+            <div id="booking-input">
+                <h3>Booking train tickets</h3>
+                    <label for="train-from">From</label>
+                    <select class="inp-style" id="train-from" type="text">
+                        <option value="">Select a city</option>
+                        <option value="Tirana">Tirana, Albania</option>
+                        <option value="Andorra la Vella">Andorra la Vella, Andorra</option>
+                        <option value="Yerevan">Yerevan, Armenia</option>
+                        <option value="Vienna">Vienna, Austria</option>
+                        <option value="Baku">Baku, Azerbaijan</option>
+                        <option value="Minsk">Minsk, Belarus</option>
+                        <option value="Brussels">Brussels, Belgium</option>
+                        <option value="Sarajevo">Sarajevo, Bosnia and Herzegovina</option>
+                        <option value="Sofia">Sofia, Bulgaria</option>
+                        <option value="Zagreb">Zagreb, Croatia</option>
+                        <option value="Nicosia">Nicosia, Cyprus</option>
+                        <option value="Prague">Prague, Czechia</option>
+                        <option value="Copenhagen">Copenhagen, Denmark</option>
+                        <option value="Tallinn">Tallinn, Estonia</option>
+                        <option value="Helsinki">Helsinki, Finland</option>
+                        <option value="Paris">Paris, France</option>
+                        <option value="Tbilisi">Tbilisi, Georgia</option>
+                        <option value="Berlin">Berlin, Germany</option>
+                        <option value="Athens">Athens, Greece</option>
+                        <option value="Budapest">Budapest, Hungary</option>
+                        <option value="Dublin">Dublin, Ireland</option>
+                        <option value="Rome">Rome, Italy</option>
+                        <option value="Astana">Astana, Kazakhstan</option>
+                        <option value="Pristina">Pristina, Kosovo</option>
+                        <option value="Riga">Riga, Latvia</option>
+                        <option value="Vaduz">Vaduz, Liechtenstein</option>
+                        <option value="Vilnius">Vilnius, Lithuania</option>
+                        <option value="Luxembourg">Luxembourg (city), Luxembourg</option>
+                        <option value="Valletta">Valletta, Malta</option>
+                        <option value="Chisinau">Chisinau, Moldova</option>
+                        <option value="Monaco">Monaco, Monaco</option>
+                        <option value="Podgorica">Podgorica, Montenegro</option>
+                        <option value="Amsterdam">Amsterdam, Netherlands</option>
+                        <option value="Skopje">Skopje, North Macedonia</option>
+                        <option value="Oslo">Oslo, Norway</option>
+                        <option value="Warsaw">Warsaw, Poland</option>
+                        <option value="Lisbon">Lisbon, Portugal</option>
+                        <option value="Bucharest">Bucharest, Romania</option>
+                        <option value="Moscow">Moscow, Russia</option>
+                        <option value="San Marino">San Marino, San Marino</option>
+                        <option value="Bratislava">Bratislava, Slovakia</option>
+                        <option value="Ljubljana">Ljubljana, Slovenia</option>
+                        <option value="Madrid">Madrid, Spain</option>
+                        <option value="Stockholm">Stockholm, Sweden</option>
+                        <option value="Bern">Bern, Switzerland</option>
+                        <option value="Ankara">Ankara, Turkey</option>
+                        <option value="Vienna">Vienna, Austria</option>
+                        <option value="Amsterdam">Amsterdam, Netherlands</option>
+                        <option value="Andorra la Vella">Andorra la Vella, Andorra</option>
+                        <option value="Athens">Athens, Greece</option>
+                        <option value="Baku">Baku, Azerbaijan</option>
+                        <option value="Berlin">Berlin, Germany</option>
+                        <option value="Bern">Bern, Switzerland</option>
+                        <option value="Bratislava">Bratislava, Slovakia</option>
+                        <option value="Brussels">Brussels, Belgium</option>
+                        <option value="Bucharest">Bucharest, Romania</option>
+                        <option value="Budapest">Budapest, Hungary</option>
+                        <option value="Chisinau">Chisinau, Moldova</option>
+                        <option value="Copenhagen">Copenhagen, Denmark</option>
+                        <option value="Dublin">Dublin, Ireland</option>
+                        <option value="Helsinki">Helsinki, Finland</option>
+                        <option value="Kyiv">Kyiv (Kiev), Ukraine</option>
+                        <option value="Lisbon">Lisbon, Portugal</option>
+                        <option value="Ljubljana">Ljubljana, Slovenia</option>
+                        <option value="London">London, United Kingdom</option>
+                        <option value="Luxembourg">Luxembourg (city), Luxembourg</option>
+                        <option value="Madrid">Madrid, Spain</option>
+                        <option value="Minsk">Minsk, Belarus</option>
+                        <option value="Monaco">Monaco, Monaco</option>
+                        <option value="Moscow">Moscow, Russia</option>
+                        <option value="Nicosia">Nicosia, Cyprus</option>
+                        <option value="Oslo">Oslo, Norway</option>
+                        <option value="Paris">Paris, France</option>
+                        <option value="Podgorica">Podgorica, Montenegro</option>
+                        <option value="Pristina">Pristina, Kosovo</option>
+                        <option value="Riga">Riga, Latvia</option>
+                        <option value="Rome">Rome, Italy</option>
+                        <option value="San Marino">San Marino, San Marino</option>
+                        <option value="Sarajevo">Sarajevo, Bosnia and Herzegovina</option>
+                        <option value="Skopje">Skopje, North Macedonia</option>
+                        <option value="Sofia">Sofia, Bulgaria</option>
+                        <option value="Stockholm">Stockholm, Sweden</option>
+                        <option value="Tallinn">Tallinn, Estonia</option>
+                        <option value="Tbilisi">Tbilisi, Georgia</option>
+                        <option value="Tirana">Tirana, Albania</option>
+                        <option value="Valletta">Valletta, Malta</option>
+                        <option value="Vaduz">Vaduz, Liechtenstein</option>
+                        <option value="Vatican City">Vatican City (Holy See), Vatican City</option>
+                        <option value="Vilnius">Vilnius, Lithuania</option>
+                                            </select>
+
+                </div>
+                <div class="select-group">
+                    <label for="train-to">To</label>
+    <select class="inp-style" id="train-to" type="text" name="" placeholder="New York, United States">
+    <option value="">Select a city</option>
+    <option value="Tirana">Tirana, Albania</option>
+    <option value="Andorra la Vella">Andorra la Vella, Andorra</option>
+    <option value="Yerevan">Yerevan, Armenia</option>
+    <option value="Vienna">Vienna, Austria</option>
+    <option value="Baku">Baku, Azerbaijan</option>
+    <option value="Minsk">Minsk, Belarus</option>
+    <option value="Brussels">Brussels, Belgium</option>
+    <option value="Sarajevo">Sarajevo, Bosnia and Herzegovina</option>
+    <option value="Sofia">Sofia, Bulgaria</option>
+    <option value="Zagreb">Zagreb, Croatia</option>
+    <option value="Nicosia">Nicosia, Cyprus</option>
+    <option value="Prague">Prague, Czechia</option>
+    <option value="Copenhagen">Copenhagen, Denmark</option>
+    <option value="Tallinn">Tallinn, Estonia</option>
+    <option value="Helsinki">Helsinki, Finland</option>
+    <option value="Paris">Paris, France</option>
+    <option value="Tbilisi">Tbilisi, Georgia</option>
+    <option value="Berlin">Berlin, Germany</option>
+    <option value="Athens">Athens, Greece</option>
+    <option value="Budapest">Budapest, Hungary</option>
+    <option value="Dublin">Dublin, Ireland</option>
+    <option value="Rome">Rome, Italy</option>
+    <option value="Astana">Astana, Kazakhstan</option>
+    <option value="Pristina">Pristina, Kosovo</option>
+    <option value="Riga">Riga, Latvia</option>
+    <option value="Vaduz">Vaduz, Liechtenstein</option>
+    <option value="Vilnius">Vilnius, Lithuania</option>
+    <option value="Luxembourg">Luxembourg (city), Luxembourg</option>
+    <option value="Valletta">Valletta, Malta</option>
+    <option value="Chisinau">Chisinau, Moldova</option>
+    <option value="Monaco">Monaco, Monaco</option>
+    <option value="Podgorica">Podgorica, Montenegro</option>
+    <option value="Amsterdam">Amsterdam, Netherlands</option>
+    <option value="Skopje">Skopje, North Macedonia</option>
+    <option value="Oslo">Oslo, Norway</option>
+    <option value="Warsaw">Warsaw, Poland</option>
+    <option value="Lisbon">Lisbon, Portugal</option>
+    <option value="Bucharest">Bucharest, Romania</option>
+    <option value="Moscow">Moscow, Russia</option>
+    <option value="San Marino">San Marino, San Marino</option>
+    <option value="Bratislava">Bratislava, Slovakia</option>
+    <option value="Ljubljana">Ljubljana, Slovenia</option>
+    <option value="Madrid">Madrid, Spain</option>
+    <option value="Stockholm">Stockholm, Sweden</option>
+    <option value="Bern">Bern, Switzerland</option>
+    <option value="Ankara">Ankara, Turkey</option>
+    <option value="Vienna">Vienna, Austria</option>
+    <option value="Amsterdam">Amsterdam, Netherlands</option>
+    <option value="Andorra la Vella">Andorra la Vella, Andorra</option>
+    <option value="Athens">Athens, Greece</option>
+    <option value="Baku">Baku, Azerbaijan</option>
+    <option value="Berlin">Berlin, Germany</option>
+    <option value="Bern">Bern, Switzerland</option>
+    <option value="Bratislava">Bratislava, Slovakia</option>
+    <option value="Brussels">Brussels, Belgium</option>
+    <option value="Bucharest">Bucharest, Romania</option>
+    <option value="Budapest">Budapest, Hungary</option>
+    <option value="Chisinau">Chisinau, Moldova</option>
+    <option value="Copenhagen">Copenhagen, Denmark</option>
+    <option value="Dublin">Dublin, Ireland</option>
+    <option value="Helsinki">Helsinki, Finland</option>
+    <option value="Kyiv">Kyiv (Kiev), Ukraine</option>
+    <option value="Lisbon">Lisbon, Portugal</option>
+    <option value="Ljubljana">Ljubljana, Slovenia</option>
+    <option value="London">London, United Kingdom</option>
+    <option value="Luxembourg">Luxembourg (city), Luxembourg</option>
+    <option value="Madrid">Madrid, Spain</option>
+    <option value="Minsk">Minsk, Belarus</option>
+    <option value="Monaco">Monaco, Monaco</option>
+    <option value="Moscow">Moscow, Russia</option>
+    <option value="Nicosia">Nicosia, Cyprus</option>
+    <option value="Oslo">Oslo, Norway</option>
+    <option value="Paris">Paris, France</option>
+    <option value="Podgorica">Podgorica, Montenegro</option>
+    <option value="Pristina">Pristina, Kosovo</option>
+    <option value="Riga">Riga, Latvia</option>
+    <option value="Rome">Rome, Italy</option>
+    <option value="San Marino">San Marino, San Marino</option>
+    <option value="Sarajevo">Sarajevo, Bosnia and Herzegovina</option>
+    <option value="Skopje">Skopje, North Macedonia</option>
+    <option value="Sofia">Sofia, Bulgaria</option>
+    <option value="Stockholm">Stockholm, Sweden</option>
+    <option value="Tallinn">Tallinn, Estonia</option>
+    <option value="Tbilisi">Tbilisi, Georgia</option>
+    <option value="Tirana">Tirana, Albania</option>
+    <option value="Valletta">Valletta, Malta</option>
+    <option value="Vaduz">Vaduz, Liechtenstein</option>
+    <option value="Vatican City">Vatican City (Holy See), Vatican City</option>
+    <option value="Vilnius">Vilnius, Lithuania</option>
+                        </select>
+                </div>
+                <div class="inputs">
+    <div class="input-group">
+        <label for="departure-date">Departure</label>
+        <input class="inp-style" id="departure-date" type="date" name="">
+    </div>
+    <div class="input-group">
+        <label for="return-date">Return</label>
+        <input class="inp-style" id="return-date" type="date" name="">
+    </div>
+</div>
+<div class="input-group">
+    <label for="one-way">
+        One-way
+        <input type="radio" name="trip-type" id="one-way" value="one-way">
+    </label>
+</div>
+
+
+
+                <label for="first-class-ticket-number">First Class ($100)</label>
+                <div class="input-group first-class">
+                    <div class="plus-minus-btn">
+                        <span id="first-class-minus" class="control">-</span>
+                    </div>
+                    <div>
+                        <input class="inp-style inp-width" type="text" name="" id="first-class-ticket-number" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <span id="first-class-plus" class="control">+</span>
+                    </div>
+                </div>
+
+                <label for="economy-class-ticket-number">Economy ($50)</label>
+                <div class="input-group economy-class">
+                    <div class="plus-minus-btn">
+                        <span id="economy-class-minus" class="control">-</span>
+                    </div>
+                    <div>
+                        <input class="inp-style inp-width" type="text" name="" id="economy-class-ticket-number" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <span id="economy-class-plus" class="control">+</span>
+                    </div>
+                </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="price-subtotal">0</span></p>
+                        </div>
+                    </div>
+
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% fees</p>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="price-fees">0</span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="price-total">0</span></p>
+                        </div>
+                    </div>
+                </div>
+               <!---  <label for="email">Email</label>
+                <input class="inp-style" id="email" type="email" placeholder="Enter your email address"> -->
+                <button class="btn-style" onclick="submitForm()">Book Now</button>
+            </div>
+
+
+        </div>
+
+        <div class="booking-content">
+            <h1>Discover Europe</h1>
+            <p id="clock"></p>
+          </div>
+    </section>
+
+    <script src="script.js"></script>
+
+ 
+</body>
+
+</html>
