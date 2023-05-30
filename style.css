@@ -200,14 +200,17 @@ nav ul li a:hover,
     justify-content: center;
     flex-direction: column;
     font-style: italic;
+    
 }
+
 .location-h1 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction:column ;
-    margin-top: 20px;
-
+    flex-direction: column;
+    margin-top: 50px;
+    color: black;
+    
 }
+
 
 
