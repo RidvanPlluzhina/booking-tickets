@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -204,13 +206,15 @@ nav ul li a:hover,
 }
 
 .location-h1 {
+    background-color: #333;
+    padding: 20px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    color: black;
-    
 }
+
 
 
 

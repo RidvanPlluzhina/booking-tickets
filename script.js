@@ -105,10 +105,12 @@ function handleTicketPrice(ticket, isIncrease) {
 
 //making return disabled after radio button is pressed.
 const oneWayRadio = document.getElementById("one-way");
-const returnRadio = document.getElementById("return-date");
+const returnDateInput = document.getElementById("return-date");
+const returnTimeInput = document.getElementById("return-time");
 
 oneWayRadio.addEventListener("change", function() {
-  returnRadio.disabled = this.checked;
+  returnDateInput.disabled = this.checked;
+  returnTimeInput.disabled = this.checked;
 });
 
 //This code adds a clock on the main window.
