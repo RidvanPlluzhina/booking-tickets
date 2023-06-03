@@ -5,7 +5,7 @@
         "type": "chrome",
         "request": "launch",
         "name": "Open location.html",
-        "file": "c:\\Users\\Ridvan Plluzhina\\booking-tickets\\index.html."
+        "file": "c:\\Users\\Ridvan Plluzhina\\booking-tickets\\index.html"
       }
     ]
   }

@@ -7,8 +7,7 @@
     <title>Booking</title>
     <link rel="stylesheet" href="paying.css">
     <style>
-        /* Your custom styles or overrides can be added here */
-    </style>
+</style>
 </head>
 
 <body>
@@ -16,23 +15,26 @@
         <h2 class="header-text">Insert your card details</h2>
 
         <div class="card-container">
-
             <div class="front">
                 <div class="image">
                     <img src="images/chip.png" alt="">
                     <img src="images/visa.png" alt="">
                 </div>
                 <div class="card-number-box">################</div>
+                <div class="box">
+                    <span></span>
+                    <div class="bank-name"></div>
+                </div>
                 <div class="flexbox">
                     <div class="box">
-                        <span>card holder</span>
-                        <div class="card-holder-name">full name</div>
+                        <span></span>
+                        <div class="card-holder-name"></div>
                     </div>
                     <div class="box">
-                        <span>expires</span>
+                        <span></span>
                         <div class="expiration">
-                            <span class="exp-month">mm</span>
-                            <span class="exp-year">yy</span>
+                            <span class="exp-month"></span>
+                            <span class="exp-year"></span>
                         </div>
                     </div>
                 </div>
@@ -46,9 +48,7 @@
                     <img src="images/visa.png" alt="">
                 </div>
             </div>
-
         </div>
-
 
         <form action="">
             <div class="inputBox">
@@ -58,6 +58,10 @@
             <div class="inputBox">
                 <span>card holder</span>
                 <input type="text" class="card-holder-input">
+            </div>
+            <div class="inputBox">
+                <span>bank name</span>
+                <input type="text" class="bank-name-input">
             </div>
             <div class="flexbox">
                 <div class="inputBox">
@@ -89,63 +93,58 @@
                         <option value="2025">2025</option>
                         <option value="2026">2026</option>
                         <option value="2027">2027</option>
-                       
-
-                    <option value="2028">2028</option>
-                    <option value="2029">2029</option>
-                    <option value="2030">2030</option>
-                </select>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+                </div>
             </div>
             <div class="inputBox">
                 <span>cvv</span>
                 <input type="text" maxlength="4" class="cvv-input">
             </div>
-        </div>
-        <input type="submit" value="submit" class="submit-btn">
-    </form>
+            <div>
+                <span><br>TOTAL: </span>
+                <span id="totalValue"></span>
+            </div>            
+            <input type="submit" value="submit" class="submit-btn">
+        </form>
+    </div>
 
-</div>    
-    
+    <script>
+        document.querySelector('.card-number-input').oninput = () => {
+            document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
+        }
 
-<script>
+        document.querySelector('.card-holder-input').oninput = () => {
+            document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
+        }
 
-    document.querySelector('.card-number-input').oninput = () =>{
-        document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
-    }
-    
-    document.querySelector('.card-holder-input').oninput = () =>{
-        document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
-    }
-    
-    document.querySelector('.month-input').oninput = () =>{
-        document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
-    }
-    
-    document.querySelector('.year-input').oninput = () =>{
-        document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
-    }
-    
-    document.querySelector('.cvv-input').onmouseenter = () =>{
-        document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
-        document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
-    }
-    
-    document.querySelector('.cvv-input').onmouseleave = () =>{
-        document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
-        document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
-    }
-    
-    document.querySelector('.cvv-input').oninput = () =>{
-        document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
-    }
-    
+        document.querySelector('.bank-name-input').oninput = () => {
+            document.querySelector('.bank-name').innerText = document.querySelector('.bank-name-input').value;
+        }
+
+        document.querySelector('.month-input').oninput = () => {
+            document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
+        }
+
+        document.querySelector('.year-input').oninput = () => {
+            document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
+        }
+
+        document.querySelector('.cvv-input').onmouseenter = () => {
+            document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
+            document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
+        }
+
+        document.querySelector('.cvv-input').onmouseleave = () => {
+            document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
+            document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
+        }
+
+        document.querySelector('.cvv-input').oninput = () => {
+            document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
+        }
     </script>
-    
-    
-    
-    
-    
-    
-    
-    </body>
-    </html>
+</body>
+</html>
