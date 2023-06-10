@@ -210,15 +210,15 @@ nav ul li a:hover,
     }
 
     .main-content {
-        gap: 10px;
+        gap: 5px;
     }
 
     .booking-form {
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     .booking-content h1 {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
