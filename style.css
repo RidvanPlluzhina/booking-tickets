@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap') screen;
 
 * {
     padding: 0;
@@ -9,12 +9,13 @@
 }
 
 body {
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: url("images/train.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    height: 100vh;
 }
 
 /* Navigation bar */
@@ -22,12 +23,13 @@ body {
 nav {
     height: 50px;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .container {
-    width: 1200px;
-    max-width: 85%;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 40px;
     margin: 0 auto;
 }
 
@@ -38,15 +40,15 @@ nav ul {
 }
 
 nav ul li a {
-    color:black;
+    color: black;
     padding: 15px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 nav ul li a:hover,
-.a{
-    background-color:aqua;
+.a {
+    background-color: aqua;
     border-radius: 5px;
 }
 
@@ -54,26 +56,19 @@ nav ul li a:hover,
 
 .main-content {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 70px;
+    grid-template-columns: 1fr;
+    gap: 20px;
     align-items: center;
     overflow: hidden;
 }
 
 .booking-form {
-    background-color:wheat;
+    background-color: wheat;
     border: 1px solid #dddddd;
     padding: 25px;
     border-radius: 5px;
-    float: left;
-    margin: 50 0px ;
+    margin: 20px 0;
 }
-
-/* .booking-form #email {
-    width: 100%;
-    border: 1px solid #dddddd;
-    margin-bottom: 10px; 
-} --> */
 
 .booking-form h3 {
     margin: 10px 0px;
@@ -81,20 +76,24 @@ nav ul li a:hover,
 
 .booking-form .input-group {
     margin: 10px 0;
-    
 }
 
-.booking-content h1{
-    background-color: blue;
-    color: white;
-    display: inline-block;
-    padding: 5px;
-  }
-  
-.input-group label {
-    display: flex;
-    align-items: center;
+.booking-content {
+    color: #fff;
+    width: 100%;
+    padding: 0 20px;
 }
+
+.booking-content h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Other existing styles */
 
 #clock {
     font-size: 48px;
@@ -102,7 +101,6 @@ nav ul li a:hover,
     color: black;
     margin-top: 10px;
 }
-
 
 .first-class,
 .economy-class {
@@ -117,9 +115,9 @@ nav ul li a:hover,
 
 .control {
     padding: 0 10px;
-    color:white;
+    color: white;
     font-size: 30px;
-    background-color:grey;
+    background-color: grey;
     font-weight: bold;
 }
 
@@ -152,19 +150,6 @@ nav ul li a:hover,
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-}
-
-.booking-content {
-    color: #fff;
-    width: 80%;
-}
-
-.booking-content h1 {
-    font-size: 70px;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 400;
-    margin-bottom: 25px;
 }
 
 .btn-style {
@@ -202,7 +187,6 @@ nav ul li a:hover,
     justify-content: center;
     flex-direction: column;
     font-style: italic;
-    
 }
 
 .location-h1 {
@@ -215,55 +199,47 @@ nav ul li a:hover,
     align-items: center;
 }
 
-/* Mobile Styles */
+/* Media Queries */
 
+/* Mobile Styles */
 @media only screen and (max-width: 600px) {
     .container {
-      max-width: 100%;
-      padding: 0 10px;
+        padding: 0 10px;
     }
-  
+
     .main-content {
-      grid-template-columns: 1fr;
-      gap: 20px;
+        gap: 20px;
     }
-  
+
     .booking-form {
-      margin: 20px 0;
+        margin: 20px 0;
     }
-  
+
     .booking-content h1 {
-      font-size: 40px;
+        font-size: 40px;
     }
-  }
-  
-  /* Tablet Styles */
-  
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .container {
-      max-width: 100%;
-      padding: 0 20px;
-    }
-  
-    .main-content {
-      grid-template-columns: 1fr 2fr;
-      gap: 40px;
-    }
-  }
-  
-  /* Desktop Styles */
-  
-  @media only screen and (min-width: 1025px) {
-    .container {
-      max-width: 1200px;
-      padding: 0 40px;
-    }
-  
-    .main-content {
-      grid-template-columns: 2fr 3fr;
-      gap: 70px;
-    }
-  }
-  
+}
 
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
 
+    .main-content {
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .main-content {
+        grid-template-columns: 2fr 3fr;
+        gap: 70px;
+    }
+}
