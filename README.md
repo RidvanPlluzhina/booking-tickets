@@ -1,1 +1,1 @@
-This is an application for booking train tickets.
+This is an application for booking train tickets all aroung Europe.
