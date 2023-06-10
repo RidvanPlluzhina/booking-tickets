@@ -202,21 +202,21 @@ nav ul li a:hover,
 /* Media Queries */
 
 /* Mobile Styles */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
     .container {
-        padding: 0 10px;
+        padding: 0 5px;
     }
 
     .main-content {
-        gap: 20px;
+        gap: 10px;
     }
 
     .booking-form {
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     .booking-content h1 {
-        font-size: 40px;
+        font-size: 20px;
     }
 }
 
