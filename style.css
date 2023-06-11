@@ -205,9 +205,8 @@ nav ul li a:hover,
 /* Media Queries */
 
 @media only screen and (max-width: 480px) {
-    /* Set the font size and line height to accommodate smaller screens */
     .container {
-      max-width: 90%;
+      max-width: 100%;
       margin: 0 auto;
       padding-bottom: 40px;
     }
@@ -230,7 +229,7 @@ nav ul li a:hover,
     }
   
     nav ul li a {
-      padding: 7px;
+      padding: 4px;
       font-size: 14px;
     }
   
@@ -245,7 +244,7 @@ nav ul li a:hover,
     
     .first-class,
     .economy-class {
-      flex-direction: row;
+      flex-direction: column-reverse;
     }
   
     .inp-width {
@@ -265,7 +264,7 @@ nav ul li a:hover,
   
   
 
-/* Tablet Styles */
+ 
 @media only screen and (min-width: 391px) and (max-width: 1024px) {
   .container {
     padding: 0 20px;
@@ -277,7 +276,7 @@ nav ul li a:hover,
   }
 }
 
-/* Desktop Styles */
+ 
 @media only screen and (min-width: 1025px) {
   .container {
     padding: 0 40px;
