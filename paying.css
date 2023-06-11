@@ -183,3 +183,55 @@ body {
     align-items: center;
 }
 
+/* Existing CSS code */
+
+@media only screen and (max-width: 480px) {
+    /* Styles for screens up to 480px wide */
+    body {
+      background: url("images/train.jpg");
+    }
+  
+    .container {
+      max-width: 90%;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+  
+    .container form {
+      width: 100%;
+      padding-top: 120px;
+    }
+  
+    .container .card-container {
+      margin-bottom: -120px;
+      height: 200px;
+      width: 320px;
+    }
+  
+    .container form .inputBox input,
+    .container form .inputBox select {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .container form .submit-btn {
+      font-size: 18px;
+    }
+  
+    .container .card-container .front .card-number-box {
+      font-size: 18px;
+    }
+  
+    .container .card-container .front .flexbox .box {
+      font-size: 12px;
+    }
+  
+    .container .card-container .back .box span {
+      font-size: 12px;
+    }
+  
+    .header-text {
+      padding: 16px;
+    }
+  }
+  
