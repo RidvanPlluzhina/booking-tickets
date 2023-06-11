@@ -236,6 +236,18 @@ footer {
   background-color: var(--primary-color);
 }
 
+@media screen and (min-width: 768px) {
+  /* Responsive styles for screens larger than 768px width */
+  .about {
+    grid-template-columns: 2.5fr 1fr;
+  }
+
+  
+
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 
 
