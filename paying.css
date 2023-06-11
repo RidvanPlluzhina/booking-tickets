@@ -22,14 +22,14 @@ body {
     padding-bottom: 60px;
 }
 
-.container form{
-    background:wheat;
+.container form {
+    background: wheat;
     border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    padding-top: 60px; /* Adjust this value to provide enough space */
     width: 600px;
-    padding-top: 160px;
-}
+  }
 
 .container form .inputBox{
     margin-top: 20px;
@@ -210,28 +210,28 @@ body {
   
     .container form .inputBox input,
     .container form .inputBox select {
-      font-size: 14px;
-      padding: 8px;
+      font-size: 13.5px;
+      padding: 7px;
     }
   
     .container form .submit-btn {
-      font-size: 18px;
+      font-size: 14px;
     }
   
     .container .card-container .front .card-number-box {
-      font-size: 18px;
+      font-size: 14px;
     }
   
     .container .card-container .front .flexbox .box {
-      font-size: 12px;
+      font-size: 10px;
     }
   
     .container .card-container .back .box span {
-      font-size: 12px;
+      font-size: 10px;
     }
   
     .header-text {
-      padding: 16px;
+      padding: 14px;
     }
   }
   
