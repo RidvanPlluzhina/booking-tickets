@@ -3,9 +3,10 @@
 
 :root {
   --headings-font: "Handlee", cursive;
-  --primary-color: wheat;
-  --light-grey-color: rgb(243, 243, 243);
+  --primary-color: white;
+  --light-grey-color: wheat;
   --dark-color: rgb(46, 46, 46);
+  --another-color:red;
 }
 
 * {
@@ -78,7 +79,7 @@ nav .container {
 }
 
 .social i:hover {
-  color: var(--primary-color);
+  color: var(--another-color);
 }
 
 .options a {
@@ -161,9 +162,10 @@ footer {
   grid-gap: 1.5rem;
 }
 
-.footer h4 {
+/* .footer h4 {
   margin-bottom: 1rem;
 }
+*/
 
 .footer p {
   font-size: 0.95rem;
@@ -179,11 +181,7 @@ footer {
   border-bottom: 1px dotted rgb(82, 82, 82);
 }
 
-.footer input {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 5px 0px;
-}
+
 
 .footer article:nth-child(2) a {
   display: block;
@@ -213,7 +211,7 @@ footer {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   grid-gap: 1.5rem;
-  margin: 1.7rem 0rem;
+  margin: 4rem 0 1.7rem;
 }
 
 .about article {
@@ -236,8 +234,25 @@ footer {
   background-color: var(--primary-color);
 }
 
+.back-link {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px; 
+  background-color: #f3f3f3; 
+  border-radius: 5px; 
+}
+
+.back-link::before {
+  content: "<--";
+  margin-right: 5px;
+}
+
 @media screen and (min-width: 768px) {
-  /* Responsive styles for screens larger than 768px width */
   .about {
     grid-template-columns: 2.5fr 1fr;
   }
@@ -248,6 +263,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 
 
 

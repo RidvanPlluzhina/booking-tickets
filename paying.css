@@ -20,6 +20,7 @@ body {
     justify-content: center;
     flex-flow: column;
     padding-bottom: 60px;
+    padding-top: 65px;
 }
 
 .container form {
@@ -27,7 +28,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    padding-top: 60px; /* Adjust this value to provide enough space */
+    padding-top: 130px; /* Adjust this value to provide enough space */
     width: 600px;
   }
 
@@ -233,5 +234,23 @@ body {
     .header-text {
       padding: 14px;
     }
+    
   }
   
+  .back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px; 
+    background-color: #f3f3f3; 
+    border-radius: 5px; 
+}
+
+.back-link::before {
+    content: "<--";
+    margin-right: 5px;
+}

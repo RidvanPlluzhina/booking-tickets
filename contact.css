@@ -29,7 +29,10 @@ form {
 form h3{
     color:black ;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    
+    
 }
 
 form input,form textarea {
@@ -53,3 +56,86 @@ form button {
     margin: 20px auto 0;
     border-radius: 30px;
 }
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 0px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.location-text {
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #f3f3f3;
+}
+
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px; 
+    background-color: #f3f3f3; 
+    border-radius: 5px; 
+}
+
+.back-link::before {
+    content: "<--";
+    margin-right: 5px;
+}
+
+/* Media Queries */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+    form {
+      padding: 10px;
+    }
+  
+    form h3 {
+      font-size: 18px;
+    }
+  
+    form input,
+    form textarea {
+      font-size: 16px;
+    }
+  
+    form button {
+      width: 120px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Medium devices (up to 768px) */
+  @media (max-width: 768px) {
+    form {
+      width: 80%;
+    }
+  }
+  
+  /* Large devices (up to 992px) */
+  @media (max-width: 992px) {
+    form {
+      width: 70%;
+    }
+  }
+  
+  /* Extra large devices (up to 1200px) */
+  @media (max-width: 1200px) {
+    form {
+      width: 60%;
+    }
+  }
