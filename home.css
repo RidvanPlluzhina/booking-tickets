@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap') screen;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/europe.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 2%;
+  padding-right: 9%;
+}
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+h2 {
+  color:white;
+  font-size: 50px;
+}
+
+p {
+  color: black;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: bold;
+}
+
+
+
+
+
+button {
+  width: 180px;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
+
+.card {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+}
+
+.card:hover {
+  transform: scale(1.3);
+}
+
+.card1 {
+  background-image: url(images/roma.jpg);
+}
+
+.card2 {
+  background-image: url(images/paris.jpg);
+}
+
+.card3 {
+  background-image: url(images/kosova.jpg);
+}
+
+.card4 {
+  background-image: url(images/berlin.jpg);
+}
+
+.card5 {
+  background-image: url(images/tirana.jpg);
+}
+
+.card6 {
+  background-image: url(images/schweiz.jpg);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+h5 {
+  color: #fff;
+  text-shadow: 0 0 10px #999;
+}
+
+.card p {
+  text-shadow: 0 0 10px #999;
+  font-size: 8px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/europe.jpg);
+
+    }
+  .container {
+    position: center;
+  }
+
+  .navbar {
+    height: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  button {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .navbar {
+    height: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  button {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: url("images/train.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/train.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -39,9 +39,7 @@ nav ul {
   margin: 0px 6px;
 }
 
-.highlight {
-  background-color: black;
-}
+
 
 nav ul li a {
   color: white;

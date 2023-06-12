@@ -10,7 +10,7 @@
 .container {
     width: 100%;
     height: 100vh;
-    background: url("images/train.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/train.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
