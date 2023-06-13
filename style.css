@@ -101,7 +101,7 @@ nav ul li a:hover,
 #clock {
   font-size: 48px;
   font-weight: bold;
-  color: black;
+  color: white;
   margin-top: 10px;
   background-color: transparent; /* Add this line to reset the background color */
 }

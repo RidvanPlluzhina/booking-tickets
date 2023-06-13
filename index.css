@@ -9,7 +9,7 @@
 .container {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.579), rgba(0, 0, 0, 0.59)), url(images/europe.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.503)), url(images/europe.jpg);
   background-position: center;
   background-size: cover;
   padding-left: 2%;
@@ -45,15 +45,16 @@ nav ul li a {
 }
 
 h2 {
-  color:white;
+  color:black;
   font-size: 50px;
 }
 
 p {
-  color: black;
+  color:white;
   font-size: 15px;
-  line-height: 15px;
+  line-height: 20px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 
@@ -92,27 +93,31 @@ button {
 }
 
 .card1 {
-  background-image: url(images/roma.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.579), rgba(0, 0, 0, 0.59)), url(images/roma.jpg);
 }
 
 .card2 {
-  background-image: url(images/paris.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.579), rgba(0, 0, 0, 0.59)), url(images/paris.jpg);
 }
 
 .card3 {
-  background-image: url(images/kosova.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.579), rgba(0, 0, 0, 0.59)), url(images/kosova.jpg);
+
 }
 
 .card4 {
-  background-image: url(images/berlin.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.579), rgba(0, 0, 0, 0.59)), url(images/berlin.jpg);
+
 }
 
 .card5 {
-  background-image: url(images/tirana.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.579), rgba(0, 0, 0, 0.59)), url(images/tirana.jpg);
+
 }
 
 .card6 {
-  background-image: url(images/schweiz.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.579), rgba(0, 0, 0, 0.59)), url(images/schweiz.jpg);
+
 }
 
 .card:hover {
