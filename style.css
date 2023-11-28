@@ -30,7 +30,7 @@ nav {
   width: 100%;
   max-width: 1200px;
   padding: 0 40px;
-  margin: 0 auto;
+  margin: 20px;
 }
 
 nav ul {
@@ -84,6 +84,7 @@ nav ul li a {
 .booking-content {
   color: #fff;
   padding: 0 20px;
+
 }
 
 .booking-content h1 {
