@@ -48,12 +48,12 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav ul li a:hover,
+ /* nav ul li a:hover,
 .a {
   background-color:black;
   border-radius: 5px;
 }
-
+*/
 
 /* Booking form */
 
@@ -70,7 +70,7 @@ nav ul li a:hover,
   border: 1px solid #dddddd;
   padding: 15px;
   border-radius: 4.9px;
-  margin: 5px 0;
+  margin: 40px 0;
 }
 
 .booking-form h3 {
