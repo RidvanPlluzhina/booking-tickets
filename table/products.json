@@ -1,0 +1,50 @@
+[
+	{
+		"id": 1,
+		"image": "train-images/Japan.jpg",
+		"name": "Shinkansen",
+		"speed": "240-320 km/h ",
+		"capacity": "from 300 to over 1,300 passengers",
+		"country": "Japan"
+	},
+	{
+		"id": 2,
+		"image": "train-images/China.jpg",
+		"name": "Shanghai Maglev",
+		"speed": "up to 431 km/h ",
+		"capacity": "Around 600 passengers",
+		"country": "China"
+	},
+	{
+		"id": 3,
+		"image": "train-images/France.jpg",
+		"name": "Train à Grande Vitesse (TGV)",
+		"speed": " up to 320 km/h ",
+		"capacity": " hundreds of passengers",
+		"country": "France"
+	},
+	{
+		"id": 4,
+		"image": "train-images/Frecciarosa.png",
+		"name": "Frecciarossa",
+		"speed": "up to 300 km/h ",
+		"capacity": "hundred passengers",
+		"country": "Italy"
+	},
+	{
+		"id": 5,
+		"image": "train-images/Intercity.jpg",
+		"name": " ICE (InterCityExpress)",
+		"speed": "up to 300 km/h ",
+		"capacity": "undred to over a thousand passengers.",
+		"country": "Germany"
+	},
+	{
+		"id": 6,
+		"image": "train-images/Schweiz.jpg",
+		"name": "SBB-CFF-FFS ICN",
+		"speed": "up to 200 km/h ",
+		"capacity": "several hundred passengers.",
+		"country": "Switzerland"
+	}
+]
