@@ -23,7 +23,7 @@ To install and set up the project locally, follow these simple steps:
 1. **Clone the repository**
    - Use CMD or Git Bash to run the following command:
      
-     git clone https://github.com/yourgithub/booking-tickets.git
+     git clone (the link of the repository)
      
    - Alternatively, you can clone the repository using GitHub's web interface by clicking on the "Clone or download" button and then "Download ZIP".
 
