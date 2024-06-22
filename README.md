@@ -1,4 +1,4 @@
-# Booking Tickets - Train Ticketing System (Ongoing Project)
+# Booking Tickets - Train Ticketing System
 
 ## Project Overview
 
